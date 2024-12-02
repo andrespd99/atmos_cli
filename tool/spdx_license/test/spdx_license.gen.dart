@@ -11,7 +11,7 @@
 library spdx_license;
 
 /// {@template spdx_license}
-/// A list of all 672 SPDX licenses.
+/// A list of all 679 SPDX licenses.
 ///
 /// These have been automatically generated from the SPDX License brick.
 /// {@endtemplate}
@@ -170,6 +170,8 @@ enum SpdxLicense {
   $CC_BY_SA_3_0_IGO._('CC-BY-SA-3.0-IGO'),
   $CC_BY_SA_4_0._('CC-BY-SA-4.0'),
   $CC_PDDC._('CC-PDDC'),
+  $CC_PDM_1_0._('CC-PDM-1.0'),
+  $CC_SA_1_0._('CC-SA-1.0'),
   $CC0_1_0._('CC0-1.0'),
   $CDDL_1_0._('CDDL-1.0'),
   $CDDL_1_1._('CDDL-1.1'),
@@ -344,6 +346,7 @@ enum SpdxLicense {
   $Imlib2._('Imlib2'),
   $Info_ZIP._('Info-ZIP'),
   $Inner_Net_2_0._('Inner-Net-2.0'),
+  $InnoSetup._('InnoSetup'),
   $Intel._('Intel'),
   $Intel_ACPI._('Intel-ACPI'),
   $Interbase_1_0._('Interbase-1.0'),
@@ -550,6 +553,7 @@ enum SpdxLicense {
   $SISSL._('SISSL'),
   $SISSL_1_2._('SISSL-1.2'),
   $SL._('SL'),
+  $SMAIL_GPL._('SMAIL-GPL'),
   $SMLNJ._('SMLNJ'),
   $SMPPL._('SMPPL'),
   $SNIA._('SNIA'),
@@ -634,6 +638,7 @@ enum SpdxLicense {
   $Zimbra_1_4._('Zimbra-1.4'),
   $Zlib._('Zlib'),
   $any_OSI._('any-OSI'),
+  $any_OSI_perl_modules._('any-OSI-perl-modules'),
   $bcrypt_Solar_Designer._('bcrypt-Solar-Designer'),
   $blessing._('blessing'),
   $bzip2_1_0_5._('bzip2-1.0.5'),
@@ -653,6 +658,7 @@ enum SpdxLicense {
   $etalab_2_0._('etalab-2.0'),
   $fwlw._('fwlw'),
   $gSOAP_1_3b._('gSOAP-1.3b'),
+  $generic_xts._('generic-xts'),
   $gnuplot._('gnuplot'),
   $gtkbook._('gtkbook'),
   $hdparm._('hdparm'),
@@ -681,6 +687,7 @@ enum SpdxLicense {
   $threeparttable._('threeparttable'),
   $ulem._('ulem'),
   $w3m._('w3m'),
+  $wwl._('wwl'),
   $wxWindows._('wxWindows'),
   $xinetd._('xinetd'),
   $xkeyboard_config_Zinoviev._('xkeyboard-config-Zinoviev'),
