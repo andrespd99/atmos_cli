@@ -3,30 +3,26 @@
 ### Avila Tek Mobile Open Source (ATMOS) CLI
 <br clear="left"/>
 
-[![ci][ci_badge]][ci_link]
-[![coverage][coverage_badge]][ci_link]
-[![pub package][pub_badge]][pub_link]
-[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
 [![License: MIT][license_badge]][license_link]
 
 ---
 
-Fork from `very_good_cli` with extra features for Avila Tek ⛰️ Mobile projects.
+## What's new in atmos_cli
 
+`atmos_cli` is a fork from [`very_good_cli`](https://github.com/VeryGoodOpenSource/very_good_cli) with a powerful custom bootstrapping.
 
-## Special features in `atmos_cli`
+The `create flutter_app` command was customized to accelerate app setup. It uses [atmos_core](https://github.com/andrespd99/atmos_templates/tree/main/atmos_core), a template customized from the original [very_good_core](https://github.com/VeryGoodOpenSource/very_good_templates/tree/main/very_good_core) with an opinionated codebase.
 
-To this date, `atmos_cli` is almost identical to `very_good_cli`, but with the following extra features:
+A setup process is started after code generation is complete. It does some tasks automatically that were previously done manually:
+- Sets up and installs FVM using the newest stable Flutter version to kick off development from the latest version available.
+- Automatically generates the README file with instructions on how to launch the app.
+- Configures the `codemagic.yaml` file with all environments (development, staging, and production) for CI/CD. [See more](https://brickhub.dev/bricks/avila_codemagic).
+- Configures routing boilerplates with go_router package. [See more](https://brickhub.dev/bricks/bootstrap_go_routes/0.1.1)
+- Creates the entire [theme scaffolding](https://brickhub.dev/bricks/avila_themes/0.1.0) from a color palette.
 
-The only command that is modified from the original CLI tool is `atmos create flutter_app`.
+**And the best feature by far...**
+- Automatically sets up Firebase for all environments (development, staging, and production), for iOS and Android platforms. It prompts you to create a new app in the Firebase console or pick an existing one. Then, it handles the resulting config files properly. The result is a Firebase configuration with environment isolation, ready to launch.
 
-First, it uses [atmos_core](https://github.com/andrespd99/atmos_templates/tree/main/atmos_core) template, a slightly different template from [very_good_core](https://github.com/VeryGoodOpenSource/very_good_templates/tree/main/very_good_core).
-
-Second, it has an extended setup process that does the following things:
-- Sets up FVM with the newest stable Flutter version.
-- Runs `mason get` and generates the base bricks used in our projects: [`avilatek_readme`](https://brickhub.dev/bricks/avilatek_readme/0.1.0), [`avila_codemagic`](https://brickhub.dev/bricks/avila_codemagic/0.1.0), [`bootstrap_go_routes`](https://brickhub.dev/bricks/bootstrap_go_routes/0.1.1) and [`avila_themes`](https://brickhub.dev/bricks/avila_themes/0.1.0).
-- Prompts the user to setup Firebase in the project. **This is the neatest feature in `atmos`!**. It will setup Firebase for all flavors (development, staging and production) for iOS and Android platforms. It also sets up the firebase config files in Dart, Android and iOS. In iOS, a config folder is created with every `GoogleService-Info.plist` file and adds a Build Phase script to use the correct file for each flavor. In Dart, it creates a `firebase_config.dart` file with the correct configuration for each flavor. This is a huge time saver for developers!
-- Finally, adds needed dependencies and fixes dart analysis issues.
 
 
 ## Documentation 📝
